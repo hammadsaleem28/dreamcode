@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development | DreamCode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #f8f9fa; }
+        .service-hero-modern {
+            position: relative;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #232526 0%, #ee0979 100%);
+            overflow: hidden;
+        }
+        .hero-bg-svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0; left: 0;
+            z-index: 0;
+            opacity: 0.18;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem 1rem 2rem 1rem;
+        }
+        .hero-content i {
+            font-size: 4rem;
+            margin-bottom: 1.2rem;
+            color: #fff;
+            background: linear-gradient(90deg, #0984e3, #ee0979);
+            border-radius: 50%;
+            padding: 1rem 1.2rem;
+            box-shadow: 0 4px 24px 0 rgba(238,9,121,0.10);
+            animation: popIn 1s cubic-bezier(.23,1.01,.32,1);
+        }
+        .hero-content h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #0984e3, #ee0979);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+            animation: fadeInUp 1.2s 0.2s both;
+        }
+        .hero-content p {
+            font-size: 1.25rem;
+            color: #fbeee0;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1.2s 0.4s both;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #ee0979 0%, #2a5298 100%);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 24px 0 rgba(238,9,121,0.10);
+            transition: background 0.3s, transform 0.2s;
+            animation: fadeInUp 1.2s 0.6s both;
+        }
+        .cta-button:hover {
+            background: linear-gradient(135deg, #2a5298 0%, #ee0979 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @keyframes popIn {
+            0% { transform: scale(0.7); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .section {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.08);
+            padding: 2.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1.2s both;
+        }
+        .section h2 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #0984e3, #ee0979);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .section ul, .section p {
+            color: #232526;
+            font-size: 1.08rem;
+        }
+        .trends {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.5rem 0 0 0;
+        }
+        .trend-card {
+            background: linear-gradient(135deg, #0984e3 0%, #ee0979 100%);
+            color: #fff;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px 0 rgba(238,9,121,0.10);
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            transition: transform 0.2s;
+        }
+        .trend-card i {
+            font-size: 1.3rem;
+        }
+        .trend-card:hover {
+            transform: translateY(-4px) scale(1.04);
+        }
+        .case-study {
+            background: #f4f7fa;
+            border-radius: 12px;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+            box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.06);
+        }
+        .case-study h3 {
+            color: #ee0979;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .case-study p {
+            color: #232526;
+            font-size: 1rem;
+        }
+        @media (max-width: 600px) {
+            .hero-content h1 { font-size: 1.5rem; }
+            .section { padding: 1.2rem 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">DreamCode</a>
+            <div class="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#process">Process</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="pro-badge">WEB DEVELOPMENT</span>
+                <h1>Crafting Digital Excellence</h1>
+                <p>Elevate your digital presence with our cutting-edge web development solutions</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Start Your Project</a>
+                    <a href="#features" class="cta-button-outline">Explore Features</a>
+                </div>
+                <div class="trust-badges">
+                    <span><i class="fab fa-react"></i> React.js</span>
+                    <span><i class="fab fa-node-js"></i> Node.js</span>
+                    <span><i class="fab fa-aws"></i> AWS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">KEY FEATURES</span>
+                <h2>Enterprise-Grade Development</h2>
+                <p>Leverage our expertise in building scalable, secure, and high-performance web solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Lightning Fast</h3>
+                    <p>Sub-second load times with advanced caching and optimization</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-grade security with multiple layers of protection</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Architecture</h3>
+                    <p>Scalable infrastructure that grows with your business</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Clean Code</h3>
+                    <p>Maintainable, documented, and efficient codebase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">DEVELOPMENT PROCESS</span>
+                <h2>How We Work</h2>
+                <p>Our proven methodology for successful web development projects</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Requirements</h3>
+                    <p>Detailed analysis of your business needs and technical requirements</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Design</h3>
+                    <p>Creating user-friendly interfaces and system architecture</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Development</h3>
+                    <p>Agile development with regular updates and testing</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Deployment</h3>
+                    <p>Smooth launch with continuous monitoring and support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">TECH STACK</span>
+                <h2>Technologies We Use</h2>
+                <p>Modern tools and frameworks for robust web applications</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fab fa-react"></i>
+                    <div class="label">React.js</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fab fa-node-js"></i>
+                    <div class="label">Node.js</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fab fa-aws"></i>
+                    <div class="label">AWS</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-database"></i>
+                    <div class="label">MongoDB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">GET STARTED</span>
+                <h2>Start Your Web Project</h2>
+                <p>Let's discuss how we can help you achieve your goals</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Project Details" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrollProgress = document.querySelector('.scroll-progress');
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            scrollProgress.style.transform = `scaleX(${scrollPercent / 100})`;
+        });
+
+        // Add intersection observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.feature-card, .tech-item, .case-study-card, .testimonial-card, .process-step').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add delay variables for staggered animations
+        document.querySelectorAll('.tech-badges span').forEach((span, index) => {
+            span.style.setProperty('--delay', index);
+        });
+
+        document.querySelectorAll('.feature-list li').forEach((li, index) => {
+            li.style.setProperty('--delay', index);
+        });
+
+        // Add hover effect for tech badges
+        document.querySelectorAll('.tech-badges span').forEach(span => {
+            span.addEventListener('mouseover', () => {
+                span.style.transform = 'translateY(-10px) scale(1.1)';
+            });
+            span.addEventListener('mouseout', () => {
+                span.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add parallax effect
+        window.addEventListener('scroll', () => {
+            const parallaxSections = document.querySelectorAll('.web-dev-hero, .tech-stack, .case-studies, .testimonials');
+            parallaxSections.forEach(section => {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.3;
+                section.style.backgroundPositionY = rate + 'px';
+            });
+        });
+
+        // Add dynamic counter animation for statistics
+        const animateValue = (element, start, end, duration) => {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value + (element.dataset.suffix || '');
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        // Animate statistics when they come into view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numbers = entry.target.querySelectorAll('.number');
+                    numbers.forEach(number => {
+                        const finalValue = parseInt(number.textContent);
+                        animateValue(number, 0, finalValue, 2000);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.case-study-stats').forEach(stats => {
+            statsObserver.observe(stats);
+        });
+
+        // Add ripple effect to buttons
+        const buttons = document.querySelectorAll('.cta-button, .cta-button-outline');
+        buttons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const ripple = document.createElement('span');
+                ripple.style.cssText = `
+                    position: absolute;
+                    background: rgba(255,255,255,0.3);
+                    border-radius: 50%;
+                    pointer-events: none;
+                    width: ${this.clientWidth}px;
+                    height: ${this.clientWidth}px;
+                    left: ${x - this.clientWidth/2}px;
+                    top: ${y - this.clientWidth/2}px;
+                    transform: scale(0);
+                    animation: ripple 0.6s linear;
+                `;
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+    </script>
+
+    <style>
+        @keyframes ripple {
+            to {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+</body>
+</html> 

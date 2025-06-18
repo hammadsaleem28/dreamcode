@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation & RPA | DreamCode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #f8f9fa; }
+        .service-hero {
+            min-height: 45vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #232526 0%, #ee0979 100%);
+            color: #fff;
+            padding: 4rem 1rem 2rem 1rem;
+        }
+        .service-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        .service-hero p {
+            font-size: 1.2rem;
+            color: #fbeee0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .service-section {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.08);
+            padding: 2.5rem 2rem;
+        }
+        .service-section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ee0979;
+        }
+        .service-section ul {
+            margin: 1rem 0 0 1.5rem;
+            color: #232526;
+        }
+        .service-section .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+        .service-section .tool {
+            background: #f4f7fa;
+            border-radius: 8px;
+            padding: 0.7rem 1.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #232526;
+            box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .service-section .trend {
+            background: #ee0979;
+            color: #fff;
+            border-radius: 6px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.95rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+        .cta-section {
+            text-align: center;
+            margin: 3rem 0 2rem 0;
+        }
+        .cta-section a {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #ee0979 0%, #232526 100%);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 24px 0 rgba(238,9,121,0.10);
+            transition: background 0.3s, transform 0.2s;
+        }
+        .cta-section a:hover {
+            background: linear-gradient(135deg, #232526 0%, #ee0979 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 600px) {
+            .service-section { padding: 1.2rem 0.5rem; }
+            .service-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">DreamCode</a>
+            <div class="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#process">Process</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="pro-badge">AUTOMATION & RPA</span>
+                <h1>Streamline Your Business Operations</h1>
+                <p>Automate repetitive tasks and optimize workflows with intelligent RPA solutions</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Start Your Project</a>
+                    <a href="#features" class="cta-button-outline">Explore Features</a>
+                </div>
+                <div class="trust-badges">
+                    <span><i class="fas fa-robot"></i> Process Automation</span>
+                    <span><i class="fas fa-cogs"></i> Workflow Optimization</span>
+                    <span><i class="fas fa-chart-line"></i> Efficiency Boost</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="services-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">KEY FEATURES</span>
+                <h2>Automation Excellence</h2>
+                <p>Comprehensive automation solutions for modern enterprises</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>RPA Development</h3>
+                    <p>Custom automation bots for business processes</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Workflow Automation</h3>
+                    <p>Streamlined business process automation</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Process Analytics</h3>
+                    <p>Data-driven insights and optimization</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Intelligent Automation</h3>
+                    <p>AI-powered automation solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">AUTOMATION PROCESS</span>
+                <h2>How We Work</h2>
+                <p>Our systematic approach to implementing automation solutions</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Analysis</h3>
+                    <p>Identify processes suitable for automation</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Design</h3>
+                    <p>Create efficient automation workflows</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Development</h3>
+                    <p>Build and test automation solutions</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Deployment</h3>
+                    <p>Implement and monitor automated processes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">TECH STACK</span>
+                <h2>Automation Technologies</h2>
+                <p>Industry-leading tools for process automation</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-robot"></i>
+                    <div class="label">UiPath</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-cogs"></i>
+                    <div class="label">Blue Prism</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-robot"></i>
+                    <div class="label">Automation Anywhere</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i>
+                    <div class="label">Python RPA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">GET STARTED</span>
+                <h2>Start Your Automation Project</h2>
+                <p>Let's transform your business processes</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Project Details" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 

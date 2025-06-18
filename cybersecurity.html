@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Solutions | DreamCode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #f8f9fa; }
+        .service-hero {
+            min-height: 45vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #232526 0%, #00b894 100%);
+            color: #fff;
+            padding: 4rem 1rem 2rem 1rem;
+        }
+        .service-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        .service-hero p {
+            font-size: 1.2rem;
+            color: #e0f7ef;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .service-section {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.08);
+            padding: 2.5rem 2rem;
+        }
+        .service-section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #00b894;
+        }
+        .service-section ul {
+            margin: 1rem 0 0 1.5rem;
+            color: #232526;
+        }
+        .service-section .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+        .service-section .tool {
+            background: #f4f7fa;
+            border-radius: 8px;
+            padding: 0.7rem 1.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #232526;
+            box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .service-section .trend {
+            background: #00b894;
+            color: #fff;
+            border-radius: 6px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.95rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+        .cta-section {
+            text-align: center;
+            margin: 3rem 0 2rem 0;
+        }
+        .cta-section a {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #00b894 0%, #232526 100%);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 24px 0 rgba(0,184,148,0.10);
+            transition: background 0.3s, transform 0.2s;
+        }
+        .cta-section a:hover {
+            background: linear-gradient(135deg, #232526 0%, #00b894 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 600px) {
+            .service-section { padding: 1.2rem 0.5rem; }
+            .service-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">DreamCode</a>
+            <div class="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#process">Process</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="pro-badge">CYBERSECURITY</span>
+                <h1>Protect Your Digital Assets</h1>
+                <p>Comprehensive security solutions for modern enterprises</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Start Your Project</a>
+                    <a href="#features" class="cta-button-outline">Explore Features</a>
+                </div>
+                <div class="trust-badges">
+                    <span><i class="fas fa-shield-alt"></i> Threat Protection</span>
+                    <span><i class="fas fa-lock"></i> Data Security</span>
+                    <span><i class="fas fa-user-shield"></i> Compliance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="services-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">KEY FEATURES</span>
+                <h2>Security Excellence</h2>
+                <p>Advanced protection for your business assets</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Threat Detection</h3>
+                    <p>Advanced threat monitoring and response</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Data Protection</h3>
+                    <p>Secure data encryption and management</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Access Control</h3>
+                    <p>Identity and access management</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Compliance</h3>
+                    <p>Regulatory compliance and auditing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">SECURITY PROCESS</span>
+                <h2>How We Work</h2>
+                <p>Our systematic approach to cybersecurity implementation</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Assessment</h3>
+                    <p>Security audit and vulnerability assessment</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Strategy</h3>
+                    <p>Develop comprehensive security strategy</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Implementation</h3>
+                    <p>Deploy security measures and controls</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Monitoring</h3>
+                    <p>Continuous security monitoring and updates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">TECH STACK</span>
+                <h2>Security Technologies</h2>
+                <p>Industry-leading security tools and platforms</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="label">SIEM</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-lock"></i>
+                    <div class="label">Encryption</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-shield"></i>
+                    <div class="label">IAM</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-fire"></i>
+                    <div class="label">Firewall</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">GET STARTED</span>
+                <h2>Secure Your Business</h2>
+                <p>Let's build your security strategy</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Project Details" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
